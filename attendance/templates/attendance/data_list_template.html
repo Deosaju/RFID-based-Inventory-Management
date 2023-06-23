@@ -1,0 +1,30 @@
+<html>
+
+<body style="background-color: rgb(168, 168, 251);">
+    <!--Create a table at center -->
+    <table align="center" border="1px" style="width:600px; line-height:40px; font-size: larger; text-align: center; ">
+        <tr>
+            <th colspan="5">
+                <h2>Inventory List</h2>
+            </th>
+        </tr>
+        <t>
+            <th style="padding: 6px;">Product_id</th>
+            <th style="padding: 6px;">Serial</th>
+            <th style="padding: 6px;">Description</th>
+            <th style="padding: 6px;">Available</th>
+            <th style="padding: 6px;">Created_at</th>
+        </t>
+        {% for item in data %}
+        <tr>
+            <td style="padding: 6px;">{{ item.pid }}</td>
+            <td style="padding: 6px;">{{ item.serial }}</td>
+            <td style="padding: 6px;">{{ item.description }}</td>
+            <td style="padding: 6px;">{{ item.available }}</td>
+            <td style="padding: 6px;">{{ item.created_at }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+
+</html>
