@@ -18,7 +18,7 @@ To install the Django application, please follow the steps below:
 1. Clone the repository to your local machine:
 
 ```shell
-git clone [https://github.com/your-repository-url.git](https://github.com/Deosaju/RFID-based-Inventory-Management)
+git clone https://github.com/Deosaju/RFID-based-Inventory-Management
 ```
 2. Change into the project directory:
 ```shell
